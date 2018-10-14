@@ -1,0 +1,7 @@
+leaderboard:
+    path: /leaderboard
+    controller: UrlShortener\Controller\ApiController::getLeaderBoard
+
+stats:
+    path: /stats
+    controller: UrlShortener\Controller\ApiController::getStats

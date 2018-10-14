@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+    app:
+        build: ./app
+        container_name: url_shortener
+        working_dir: /var/www/html/
+        env_file: .env
+        volumes:
+            - ./app:/var/www/html
+            - ./apache.conf:/etc/apache2/sites-enabled/000-default.conf
+        ports:
+            - 8000:80
