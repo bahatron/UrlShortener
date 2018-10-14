@@ -20,6 +20,16 @@ class AppController extends Controller
     }
 
     /**
+     * @Route("/", name="homepage", methods={"GET"})
+     */
+    public function homepage()
+    {
+        $path = $this->get('kernel')->getProjectDir().'/public/dist/index.html';
+
+        return $this->responseFactory->response(file_get_contents($path));
+    }
+
+    /**
      * @Route("/{short}", name="url_redirector", methods={"GET"})
      */
     public function urlRedirector(UrlManager $repo, string $short)
