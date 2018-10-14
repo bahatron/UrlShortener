@@ -11,7 +11,6 @@ module.exports = {
             app: './client/main.js'
         },
         devServer: {
-            baseUrl: '/',
             contentBase: './client'
         }
     }

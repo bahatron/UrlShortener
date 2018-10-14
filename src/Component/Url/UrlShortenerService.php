@@ -2,6 +2,8 @@
 
 namespace UrlShortener\Component\Url;
 
+use UrlShortener\Exception\ValidationFailed;
+
 class UrlShortenerService
 {
     public $manager;
