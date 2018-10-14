@@ -1,7 +1,5 @@
 module.exports = {
-    entry: [
-        './src/index.js'
-    ],
+    entry: ['./resources/index.js'],
     module: {
         rules: [
             {
@@ -15,11 +13,11 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/public/js',
         publicPath: '/',
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: './dist'
+        contentBase: './public/js'
     }
 };
