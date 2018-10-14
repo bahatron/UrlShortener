@@ -5,7 +5,7 @@
 /var/
 /vendor/
 /node_modules/
-/public/js/
+/public/dist/
 /dist/
 ###< symfony/framework-bundle ###
 
